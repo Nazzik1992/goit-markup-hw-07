@@ -1,5 +1,6 @@
 .features {
-    display: flex;
+    &__list{
+       display: flex;}
 
     &__item {
         margin-right: 30px;
