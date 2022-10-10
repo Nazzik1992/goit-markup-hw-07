@@ -20,7 +20,7 @@
     color: var(--primary-color);
 }
 
-.nav {
+.container-header {
     display: flex;
     align-items: center;
 }
@@ -57,23 +57,20 @@
     cursor: pointer;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-icon:hover {
-    fill: var(--link-color);
-    
-}
-.link-contact:hover .nav-icon{
-    fill: var(--link-color);
 
-}
-.link-contact:focus .nav-icon{
-    fill: var(--link-color);
+    &:hover {
+        fill: var(--link-color);
+        
+    }
 }
 
-.item .current {
+
+
+.item{
+     .current {
     color: var(--link-color);
     position: relative;
-
+     }
 }
 .current::after{
     content: '';
@@ -90,9 +87,10 @@
 
 
 }
-.link:hover, .link:focus, .link:active {
+.link{
+&:hover, &:focus, &:active {
     color:var(--link-color); }
-
+}
 
 .link-contact {
     display: flex;
@@ -105,10 +103,19 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover .nav-icon{
+        fill: var(--link-color);
+    
+    }
+    &:focus .nav-icon{
+        fill: var(--link-color);
+    }
+
+    &:hover, &:focus, &:active {
+        color: var(--link-color);
+    }
 }
-.link-contact:hover, .link-contact:focus, .link-contact:active {
-    color: var(--link-color);
-}
+
 .contact-nav {
     display: flex;
     margin-left: auto;

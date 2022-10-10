@@ -41,23 +41,27 @@
             margin-bottom: 16px;
             
         }
+
+        &:last-child{
+            margin-right: 0px;
+        }
         
 }
-.team-item:last-child{
-    margin-right: 0px;
-}
 
-.social li{
-    margin-right: 10px;
-}
-.social li:last-child{
-    margin-right: 0px;
-}
+
 
 .social {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &__item{
+        margin-right: 10px;
+    }
+    &__item:last-child{
+        margin-right: 0px;
+    }
+
 
     &__link{
         display: flex;
@@ -88,6 +92,9 @@
     &__link:focus &__card{
         fill: #ffffff;
     }
+
+ 
+    
     
 }
 
